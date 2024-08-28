@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+   <header>
+    <nav class="header__menu">
+        <a class="header__menu__link" href="index.html">Home</a>
+        </nav>
+    <img class="logo" src="./img/Logo.png" alt= "logo de alura">
+   </header> 
+   <main>
+        <section>
+            <textarea class="text-area" id="textInput" cols="30" rows="10" placeholder="Ingrese el texto aquí" oninput="validarTexto(this)" ></textarea>
+        <div>
+            <h6 class="informacion">
+                <span class="zondicons--exclamation-solid"></span>Solo letras minúsculas y sin acentos
+                </h6>
+        </div>
+        <div class="botones">
+            <button class="b-encript" onclick= "bEncript()">Encriptar</button>
+            <button class="b-desencript" onclick="bDesencript()">Desencriptar</button>
+        </div>
+        
+    </section>
+    <section>
+        <textarea class="mensaje" cols="20" rows="10" id="textToCopy" placeholder="No se encuentra el texto"></textarea>
+        
+        <div>
+            <button class="copiar"  id="copiar" style="display: none;" onclick="copiarContenido()">Copiar</button>
+        </div>
+        
+        <div id="alerta" class="alerta">
+    <div class="alerta-contenido">
+        <img class="logoAlerta" src="./img/alert.png" alt= "Logo alerta">
+        <p id="mensaje-alerta"></p>
+        <button class="cerrar-alerta" onclick="cerrarAlerta()">Cerrar</button>
+    </div>
+</div>
+
+    </section>
+   </main>
+   <script src="./script.js"></script>
+   <footer class="footer">
+    <p>Desarrollado por Pamela G.:</p>
+    <img class="logoFirma" src="./img/cat-logo.png" alt= "Logo mío">
+</footer>
+</body>
+</html>

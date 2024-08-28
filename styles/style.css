@@ -1,0 +1,208 @@
+*:root{
+    --color-primer:#f5e2dd;
+    --color-segundo:#694F8E;
+    --color-tercero:#fcc2e2;
+    --color-cuarto:#E3A5C7;
+    --color-quinto:#495057;
+    --color-sexto:#b4a2c5;
+    --color-septimo:#5a3e76;
+    --img-one:url("../img/cat.png");
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z'/%3E%3C/svg%3E");
+}
+*{
+    background: var(--color-primer);
+    font-family: 'Inter';
+    font-weight: 400; 
+    line-height: 150%;
+    
+}
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-secundario)
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width:8%
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    padding-left: 280px;
+}
+
+.text-area {
+    border: none;
+    color: var(--color-segundo);
+    font-size: 2rem;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder { color:var(--color-segundo); }
+    .text-area:focus{
+        outline: none;
+    }
+
+.mensaje { 
+    background: var(--color-tercero);
+    background-image: var(--img-one);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 36px;
+    color: var(--color-segundo);
+    font-size: 2rem;
+    margin-left: 28px;
+    margin-top: 90px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 130px;
+    position: absolute;
+}
+    
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.b-desencript {
+    background-color: var(--color-cuarto);
+    border: 1px solid var(--color-segundo);
+    border-radius: 24px;
+    color: var(--color-primer);
+    font-size: 2rem;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 28px;
+    width: 50%;
+}
+.b-desencript:hover {
+    background-color: var(--color-segundo)
+}
+
+.b-encript {
+    background-color: var(--color-cuarto);
+    border: 1px solid var(--color-segundo);
+    border-radius: 24px;
+    color: var(--color-primer);
+    font-size: 2rem;
+    cursor: pointer;
+    height: 67px;
+    width: 50%;
+}
+.b-encript:hover {
+    background-color: var(--color-segundo)
+}
+.copiar {
+    border: 1px solid var(--color-segundo);
+    border-radius: 24px;
+    color: var(--color-segundo);
+    font-size: 2rem;
+    cursor: pointer;
+    height: 67px;
+    width: 17%;
+    padding-bottom: 2px;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-top: 645px;
+}
+
+.copiar:hover {
+    background-color: var(--color-sexto)
+}
+
+.zondicons--exclamation-solid {
+    display: inline-block;
+    width: 5%;
+    height: 12px;
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+.informacion {
+    color: var(--color-quinto);
+    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+}
+/* Estilo de la alerta */
+
+.alerta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; 
+    z-index: 1000;
+}
+
+
+.alerta-contenido {
+    background-color: var(--color-primer);
+    padding: 10px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+.cerrar-alerta {
+    background-color:  var(--color-segundo);
+    color: white; 
+    border: none;
+    border-radius: 24px;
+    padding: 5px 38px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.cerrar-alerta:hover {
+    background-color: var(--color-septimo);
+}
+
+.logoFirma{
+    padding-top: 10px;
+    margin-left: 10px;
+    width:5%
+}
+.logoAlerta{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 25%;
+}
+.footer{
+    color: var(--color-segundo);
+    padding: 0%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 10;
+}
+
+
